@@ -16,7 +16,7 @@ options(code_library_path = "path/to/local/codelibrary")
 
 For more information see: https://github.com/tsahota/tidyproject
 
-## Improving CodeLibrary
+## Improving PMXcodelibrary
 
 * Make your improvement to the scripts
 * Add yourself to the `## Author: ` field a the beginning of the files you have modified
