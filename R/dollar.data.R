@@ -1,5 +1,4 @@
 ## Description: compute dollar data statement
-## Depends on: 
 ## Run interactively: FALSE
 ## Key words: function
 

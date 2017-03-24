@@ -1,5 +1,4 @@
 ## Description: Example log of NONMEM runs
-## Depends on: gof1.R
 ## Run interactively: TRUE
 ## Key words: script, template
 
@@ -12,7 +11,7 @@
 ########################################
 ## load packages and source functions here
 
-library(NMproject,lib.loc = "ProjectLibrary")
+library(NMproject)
 
 source("Scripts/wait.for.R")
 source("Scripts/gof1.R")

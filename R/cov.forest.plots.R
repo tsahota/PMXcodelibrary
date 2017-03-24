@@ -1,7 +1,6 @@
 ## Author: klgk669
 ## First created: 2016-08-27
 ## Description: Forests plots full covariate model
-## Depends on: template, function
 ## Run interactively: FALSE
 ## Keywords: forest plot covariate
 

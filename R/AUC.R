@@ -3,7 +3,7 @@
 ## Key words: NCA, AUC, function
 ## Run interactively: FALSE
 
-AUC = function(time, conc, loq=0,method=c("linuplogdown","linuplogdowntmax","linear"))
+AUC <- function(time, conc, loq=0,method=c("linuplogdown","linuplogdowntmax","linear"))
 {
   method <- match.arg(method)
   trap.log.rule <- function(x,y){ ## custom function for log down

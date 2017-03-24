@@ -1,7 +1,6 @@
 ## Author: Tarjinder Sahota (klgk669)
 ## First created: 2016-02-03
 ## Description: PsN's runrecord function
-## Depends on: wait.for.R
 ## Run interactively: FALSE
 ## Keywords: function, psn
 

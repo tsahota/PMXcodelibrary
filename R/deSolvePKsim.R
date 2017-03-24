@@ -1,5 +1,4 @@
 ## Description: PK simulation deSolve
-## Depends on: 
 ## Run interactively: TRUE
 ## Keywords: deSolve, template, script
 

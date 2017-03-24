@@ -1,5 +1,4 @@
 ## Description: Function template: Ind plots
-## Depends on: output.data.R
 ## Run interactively: FALSE
 ## Key words: gof, template, function
 ## Example use: gof2(37,log=TRUE)
