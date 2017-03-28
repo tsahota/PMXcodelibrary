@@ -1,6 +1,6 @@
 ## Description: Basic NCA AUC function
-## Depends on:
 ## Key words: NCA, AUC, function
+## Author: Tarj Sahota, Peter Lawrence
 ## Run interactively: FALSE
 
 AUC <- function(time, conc, loq=0,method=c("linuplogdown","linuplogdowntmax","linear"))
