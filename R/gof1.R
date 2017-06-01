@@ -4,7 +4,9 @@
 ## Key words: function, template
 ## E.g. for sdtab37, run with gof1(37)
 
-gof1 <- function(run.no,model.dir="."){
+gof1 <- function(run.no,model.dir=getOption("models.dir")){
+  
+  if(is.null(model.dir)) model.dir <- "."
   
   ## assumes existance of "plots" directory in main working directory (plots.dir)
   

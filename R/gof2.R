@@ -7,7 +7,9 @@ gof2 <- function(run.no,logdv = FALSE,
                  DV="DV",
                  TIME="TIME",
                  primary.key="ORD",
-                 model.dir="."){
+                 model.dir=getOption("models.dir")){
+  
+  if(is.null(model.dir)) model.dir <- "."
   
   d <- output.data(run.no,primary.key = primary.key)
   if(logdv) d$PRED <- exp(d$PRED)
