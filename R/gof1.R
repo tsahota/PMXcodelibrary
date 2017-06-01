@@ -25,9 +25,9 @@ gof1 <- function(run.no,model.dir=getOption("models.dir")){
   
   ## Delete/Modify the following as needed
   print(dv.vs.pred(xpdb,smooth=NULL,type="p",main=NULL, logy=F,logx=F,
-                   ylb="Plasma concentration (units)", ))
+                   ylb="Plasma concentration (units)"))
   print(dv.vs.ipred(xpdb,smooth=NULL,type="p",main=NULL, logy=F,logx=F,
-                    ylb="Plasma concentration (units)", ))
+                    ylb="Plasma concentration (units)"))
   print(cwres.vs.pred(xpdb,smooth=NULL,type="p",main=NULL))
   print(cwres.vs.idv(xpdb,smooth=NULL,type="p",main=NULL,xlb="Time (units)"))
   print(ind.plots(xpdb,layout=c(2,2),ylb="Plasma concentration (units)",
