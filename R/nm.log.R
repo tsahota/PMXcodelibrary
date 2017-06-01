@@ -6,7 +6,6 @@
 ## load packages and source functions here
 
 library(NMproject)
-
 source("Scripts/gof1.R")
 
 ########################################
