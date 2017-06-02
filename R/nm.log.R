@@ -27,3 +27,6 @@ gof1(m2$run_id)
 # 
 # m1scm <- nm("qpsn -c auto -t 3000 -- scm run1.mod -config_file=run1.scm -dir=1scm")
 # run(m1scm)
+#
+# m1sse <- nm("qpsn -c auto -t 3000 -- sse run1.mod -samples=5 -dir=1sse")
+# run(m1sse)
