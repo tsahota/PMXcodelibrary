@@ -68,10 +68,10 @@ $THETA
 .....          	; prop error
 
 $OMEGA
-0.03			; IIV_K ; LOG
-0.03			; IIV_V2 ; LOG
-0.03			; IIV_V3 ; LOG
-0.03			; IIV_Q ; LOG
+0.1			; IIV_K ; LOG
+0.1			; IIV_V2 ; LOG
+0.1			; IIV_V3 ; LOG
+0.1			; IIV_Q ; LOG
 
 $SIGMA
 1 FIX
