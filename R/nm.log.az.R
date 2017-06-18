@@ -6,7 +6,7 @@
 ## load packages and source functions here
 
 library(NMprojectAZ)
-source("Scripts/gof1.R")
+source("Scripts/gof_xpose.R")
 
 ########################################
 ## main script here
@@ -15,12 +15,12 @@ source("Scripts/gof1.R")
 m1 <- nm("qpsn -c auto -t 3000 -- execute run1.mod -dir=1")
 run(m1)
 ## NOTE: track run with shiny_nm()
-gof1(m1$run_id)  ## post processing on model 1
+gof_xpose(m1)  ## post processing on model 1
 
-## Subsequent model - NOTE: create with copy_control("run1.mod","run2.mod")
+## NOTE: create new control with copy_control("run1.mod","run2.mod")
 # m2 <- nm("qpsn -c auto -t 3000 -- execute run2.mod -dir=2")
 # run(m2)
-# gof2(m2$run_id)
+# gof_xpose(m2)
 
 ## examples for other psn commands
 # m1boot <- nm("qpsn -c auto -t 3000 -- bootstrap run1.mod -samples=10 -dir=1boot")
