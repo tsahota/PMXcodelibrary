@@ -32,5 +32,5 @@ gof_xpose(m1)  ## post processing on model 1
 # m1scm <- nm("scm run1.mod -config_file=run1.scm -dir=1scm -nmfe_options='-prdefault'")
 # run(m1scm)
 #
-# m1sse <- nm("sse run1.mod -samples=5 -dir=1sse -nmfe_options='-prdefault'")
+# m1sse <- nm("sse -model=run1.mod -samples=5 -dir=1sse -nmfe_options='-prdefault'")
 # run(m1sse)
