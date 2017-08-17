@@ -11,7 +11,7 @@ library(plyr)        ## for the ldply and ddply aggregation functions
 ############################
 
 ## POPULATION PARAMETERS/VARIABLES
-p <- c(CL=240,V2=3100,V3=2900,Q=336,KA=0.75)
+p <- c(CL=250,V2=3100,V3=2900,Q=336,KA=0.75)
 om <- diag(c(0.1, 0.1,0.1, 0.1, 0.1))
 
 ## GENERATE INDIVIDUAL PARAMETERS/VARIABLES
