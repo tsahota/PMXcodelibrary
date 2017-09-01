@@ -1,28 +1,19 @@
 ## Description: Function template: ggplot GOF
 ## Instructions: source() this file, then run.
-## Depends on: output.data.R
+## Depends on: 
 ## Key words: function, template
 
 gof_ggplot <- function(r){
-  
-  run.no <- r$run_id
-  directory <- r$run_in
-  
+
   ## assumes existance of "plots" directory in main working directory (plots.dir)
   
   ## assumes the existance of an sdtab $TABLE file e.g.
   ##   $TABLE ID TIME IPRED IWRES IRES CWRES NPDE
   ##   FILE=sdtab[run.no] NOPRINT ONEHEADER FORMAT=tF13.4
   
-  library(xpose4)
   library(ggplot2)
   
-  xpdb <- xpose.data(run.no,directory=paste0(directory,"/"))
-  
-  ### Make any changes to xpdb, e.g. to change the independent variable
-  ## change.xvardef(xpdb,var="idv") <- "TRLD"
-  
-  d <- Data(xpdb)
+  d <- NMproject::nm_output(r)
   
   pl <- list()
   p <- ggplot(d,aes_string(x="PRED",y="DV")) + theme_bw() +
@@ -59,7 +50,7 @@ gof_ggplot <- function(r){
     geom_point() + scale_y_continuous(limits=c(-1.05*maxNPDE,1.05*maxNPDE))
   pl[[length(pl)+1]] <- p
   
-  pdf(file.path("Results",paste("gof.ggplot.run.",run.no,".xpose.basic.pdf",sep="")))
+  pdf(file.path("Results",paste("gof.ggplot.run.",r$run_no,".pdf",sep="")))
   print(pl)
   dev.off()
   
