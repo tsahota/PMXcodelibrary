@@ -45,8 +45,10 @@ DUM = EPS(1)  ;; not used
 
 $THETA
 .....          	; LAMB ; ; LOG
+
 $OMEGA
-0.0225 FIX   ; IIV_LAMB ; LOG
+0.0225 FIX      ; IIV_LAMB ; LOG
+
 $SIGMA
 1 FIX
 
