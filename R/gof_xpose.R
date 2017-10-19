@@ -6,6 +6,8 @@
 
 gof_xpose <- function(r){
   
+  #if(NMproject::is_finished(r)) stop("run not yet finished")
+  
   run.no <- r$run_id
   directory <- r$run_in
   

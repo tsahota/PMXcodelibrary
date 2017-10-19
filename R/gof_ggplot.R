@@ -1,5 +1,6 @@
 ## Description: Function template: ggplot GOF
 ## Instructions: source() this file, then run.
+## Author: 
 ## Depends on: 
 ## Key words: function, template
 
@@ -11,9 +12,10 @@ gof_ggplot <- function(r){
   ##   $TABLE ID TIME IPRED IWRES IRES CWRES NPDE
   ##   FILE=sdtab[run.no] NOPRINT ONEHEADER FORMAT=tF13.4
   
-  library(ggplot2)
-  
+  #if(NMproject::is_finished(r)) stop("run not yet finished")
   d <- NMproject::nm_output(r)
+  
+  library(ggplot2)
   
   pl <- list()
   p <- ggplot(d,aes_string(x="PRED",y="DV")) + theme_bw() +
