@@ -57,9 +57,9 @@ $THETA
 .....          	; K  ; h-1 ; LOG
 .....          	; V  ; L ; LOG
 
-$OMEGA
-0.1			; IIV_KA ; LOG
-0.1			; IIV_K ; LOG
+$OMEGA 
+0.1			          ; IIV_KA ; LOG
+0.1			    ; IIV_K ; LOG
 0.1			; IIV_V ; LOG
 
 $SIGMA

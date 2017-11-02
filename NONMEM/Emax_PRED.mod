@@ -46,7 +46,7 @@ $THETA
 .....          	; EMAX ; ; LOG
 .....          	; E50 ; ; LOG
 
-$OMEGA
+$OMEGA 
 0.0225 FIX     ; IIV_EMAX ; LOG
 0.0225 FIX     ; IIV_E50 ; LOG
 

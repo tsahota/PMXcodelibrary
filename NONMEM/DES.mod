@@ -65,8 +65,8 @@ $THETA
 .....          	; K  ; h-1 ; LOG
 .....          	; V  ; L ; LOG
 
-$OMEGA
-0.1			; IIV_KA ; LOG
+$OMEGA 
+0.1	         		; IIV_KA ; LOG
 0.1			; IIV_K ; LOG
 0.1			; IIV_V ; LOG
 
@@ -89,6 +89,7 @@ PRINT=1 NOABORT INTERACTION
 
 ; Objective function and covariance evaluation
 $EST METHOD=IMP INTER EONLY= 1 MAPITER=0 ISAMPLE = 2000 NITER = 10 RANMETHOD=3S2 NOABORT PRINT=1 NSIG=3 SIGL=9
+
 
 $COV MATRIX=R PRINT=E UNCONDITIONAL SIGL=10
 

@@ -70,10 +70,10 @@ $THETA
 .....          	; V3 ; L ; LOG
 .....          	; Q  ; L/h ; LOG
 
-$OMEGA
-0.1			; IIV_KA ; LOG
-0.1			; IIV_K ; LOG
-0.1			; IIV_V2 ; LOG
+$OMEGA 
+0.1		                 	; IIV_KA ; LOG
+0.1		        	; IIV_K ; LOG
+0.1			        ; IIV_V2 ; LOG
 0.1			; IIV_V3 ; LOG
 0.1			; IIV_Q ; LOG
 

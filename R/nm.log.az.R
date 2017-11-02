@@ -11,6 +11,8 @@ source("Scripts/gof_xpose.R")
 ########################################
 ## main script here
 
+interactive_mode(TRUE)
+
 ## Initial run  
 m1 <- nm("qpsn -c auto -t 3000 -- execute run1.mod -dir=1")
 run(m1)
