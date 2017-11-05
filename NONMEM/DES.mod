@@ -67,8 +67,8 @@ $THETA
 
 $OMEGA 
 0.1	         		; IIV_KA ; LOG
-0.1			; IIV_K ; LOG
-0.1			; IIV_V ; LOG
+0.1		        	; IIV_K ; LOG
+0.1		        	; IIV_V ; LOG
 
 $SIGMA
 0.1           	; prop error
