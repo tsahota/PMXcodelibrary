@@ -26,9 +26,9 @@ $DATA ... IGNORE=@
 
 $PRED
 
-TVINT=EXP(THETA(1))
-MU_1=LOG(TVINT)
-INT = EXP(MU_1+ETA(1))
+TVINT=THETA(1)
+MU_1=TVINT
+INT = MU_1+ETA(1)
 
 TVSLOP=THETA(2)
 MU_2 = TVSLOP
@@ -48,12 +48,12 @@ Y = PROB
 DUM = EPS(1) ;; dummy variable
 
 $THETA
-.....          	; INT ; ; LOG
+.....          	; INT ; ; 
 .....          	; SLOP ; ; 
 
 $OMEGA
-0.0225 FIX       ; IIV_EMAX ; LOG
-0.0225 FIX       ; IIV_E50 ; LOG
+0 FIX       ; IIV_EMAX ; LOG
+0 FIX       ; IIV_E50 ; LOG
 
 $SIGMA
 1 FIX
