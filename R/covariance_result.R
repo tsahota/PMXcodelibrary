@@ -1,3 +1,7 @@
+## Copied from /home/klgk669/AZD6094/pop_pk_03_05_2018/Scripts/covariance_result.R
+##  (2018-07-02 12:53:14) by klgk669
+## Copied from /projects/QCP_MODELING/PMXcodelibrary/R/covariance_result.R
+##  (2018-03-22 17:48:59) by klgk669
 ## Author: klgk669
 ## First created: 2018-03-20
 ## Description: Display $COV results
@@ -50,11 +54,34 @@ covariance_result <- function(r,trans=TRUE){
   dc <- dc %>% dplyr::filter(!value %in% 0)
   dc <- dc %>% dplyr::filter(as.numeric(Var1) > as.numeric(Var2)) ## lower corner
   
-  ggplot(dc, aes(x= Var1, y= Var2, fill = value)) + theme_bw() +
+  p <- ggplot(dc, aes(x= Var1, y= Var2, fill = value)) + theme_bw() +
     geom_tile() + 
     scale_fill_gradient2(low = "blue", high = "red", mid = "white", 
                          midpoint = 0, limit = c(-1,1), space = "Lab", 
                          name="Correlation") +
     geom_text(aes(label = round(value,2))) +
     theme(axis.text.x  = element_text(angle=90,vjust=0))
+  
+  file_name <- paste0("Results/covariance_plot_",basename(r$ctl),".pdf")
+  pdf(file_name,width = 7,height=5)
+  print(p)
+  dev.off()
+  
+  return(file_name)
+  
+}
+
+
+cov_matrix_nm <- function(r){
+  source("Scripts/read.table.nm.R")
+  dc <- read.table.nm(r$output$psn.cov,header = TRUE,skip=1)
+  par_names <- names(dc)[-1]
+  dc <- dc[,-1]
+  
+  nvars <- ncol(dc)
+  dc <- dc[(nrow(dc)-nvars+1):nrow(dc),]
+  
+  dc <- as.matrix(dc)
+  row.names(dc) <- par_names
+  dc
 }
