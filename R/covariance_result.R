@@ -1,7 +1,3 @@
-## Copied from /home/klgk669/AZD6094/pop_pk_03_05_2018/Scripts/covariance_result.R
-##  (2018-07-02 12:53:14) by klgk669
-## Copied from /projects/QCP_MODELING/PMXcodelibrary/R/covariance_result.R
-##  (2018-03-22 17:48:59) by klgk669
 ## Author: klgk669
 ## First created: 2018-03-20
 ## Description: Display $COV results
@@ -38,7 +34,8 @@ covariance_result <- function(r,trans=TRUE){
   if(trans){
     dp <- r$param_info
     current_levels <- levels(dc$Var1)
-    dl <- data.frame(cl = current_levels)
+ 
+  dl <- data.frame(cl = current_levels)
     dl$ORD <- 1:nrow(dl)
     dp <- dp[,c("Name","Parameter")]
     names(dp)[2] <- "cl"
