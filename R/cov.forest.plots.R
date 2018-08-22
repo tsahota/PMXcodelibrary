@@ -7,14 +7,13 @@
 ########################################
 ## load packages and source functions here
 
-library(NMproject,lib.loc = "ProjectLibrary")
+library(NMproject)
+library(ggplot2)
 
 ########################################
 ## main script here
 
 cov.plots <- function(run.no,pars=c("CL","V","KA")){
-  
-  library(ggplot2)
   
   d0 <- run_record(run.no)
   
